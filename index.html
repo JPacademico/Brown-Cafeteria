@@ -1,0 +1,105 @@
+  <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brown Cafeteria & Tabacaria</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style/base.css">
+  <link rel="stylesheet" href="style/layout.css">
+  <link rel="stylesheet" href="style/components.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo"><img src="img/logo.png" class="logo-img" alt="logo-da-empresa">Brown Café</div>
+    <nav class="nav">
+      <a href="#home" class="active">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#menu">Menu</a>
+      <a href="#contato">@</a>
+    </nav>
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Brown Cafeteria & Tabacaria</h1>
+      <h2>Um lugar acolhedor e tranquilo para tomar um café</h2>
+      <p>Experimente o sabor do conforto em cada xícara.</p>
+      <button>Explorar Menu</button>
+    </div>
+  </section>
+
+  <!-- GALERIA DE CAFÉS -->
+  <section class="galeria fade-in">
+    <img src="https://imgs.search.brave.com/BcymB9DHDN_XNO_SvnipWbqMvn5iI8_u15JqKC-Jtjk/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi80LzQ1L0Ff/c21hbGxfY3VwX29m/X2NvZmZlZS5KUEcv/NTEycHgtQV9zbWFs/bF9jdXBfb2ZfY29m/ZmVlLkpQRw" alt="Café 1">
+    <img src="https://imgs.search.brave.com/GcA3TSSi0HuaLiAlAthlvl_6e2S-SsuIs9BhNGCoOyI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly91bmlx/dWVjYWZlcy5jb20u/YnIvd3AtY29udGVu/dC91cGxvYWRzLzIw/MjEvMDgvUGFzc28t/Mi1MYXR0ZS1NYWNj/aGlhdG8uanBn" alt="Café 2">
+    <img src="https://imgs.search.brave.com/4TfZfYNfWPTyUeJAAWjSjwuwSn7SvPhUeMeYwTX5xs0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9m/cmFwcGUtZHJpbmst/d2l0aC1jYXJhbWVs/LW51dHMtaXNvbGF0/ZWQtd2hpdGUtYmFj/a2dyb3VuZC1haS1n/ZW5lcmF0aXZlXzEy/MzgyNy0yNDk0MC5q/cGc_c2VtdD1haXNf/aHlicmlkJnc9NzQw" alt="Café 3">
+    <img src="https://imgs.search.brave.com/3QE6dJk2KlnF26_Xs0wymYybMdhDyN7zEVqsmnh10GM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvODMy/ODUxNDcvZnIvcGhv/dG8vY3JlbWEtZXNw/cmVzc28uanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPUpkZ1JD/MzlpZ3AtaWoxNnlQ/R1ZhZVJmWnlIeS1L/bzIxRDh2amFnRS1o/dk09" alt="Café 4">
+  </section>
+
+  <!-- SEÇÃO SOBRE -->
+  <section class="sobre" id="sobre">
+    <div class="sobre-content">
+      <h2 class="fade-in">Bem-vindo à Cafeteria Brown!</h2>
+      <p class="fade-in">Somos um espaço aconchegante, ideal para relaxar, ouvir boa música e saborear cafés selecionados e tabacos premium. Aqui o tempo desacelera, e cada detalhe foi pensado para o seu conforto.</p>
+      <div class="qualidades">
+        <div class="qualidade fade-in">
+          <i>☕</i>
+          <p>Melhores Cafés</p>
+        </div>
+        <div class="qualidade fade-in">
+          <i>🚬</i>
+          <p>Tabacos Premium</p>
+        </div>
+        <div class="qualidade fade-in">
+          <i>🎵</i>
+          <p>Ambiente Aconchegante</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu" id="menu">
+    <div class="menu-item fade-in">
+      <img src="img/6d074213-08d8-4144-8d3b-6278d035c432.png" alt="Bebidas">
+      <span>Bebidas</span>
+    </div>
+    <div class="menu-item fade-in">
+      <img src="img/3805f86e-7dad-4274-948c-283c011d718b.png" alt="Comidas">
+      <span>Comidas</span>
+    </div>
+  </section>
+
+  <!-- BOTÃO CARDÁPIO -->
+  <div class="menu-btn">
+    <button onclick="location.href='menu.html'">Veja Nosso Cardápio</button>
+  </div>
+
+  <footer id="contato">
+    <p>© 2025 Brown Cafeteria & Tabacaria — Todos os direitos reservados.</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/brownaracaju" target="_blank" aria-label="Siga-nos no Instagram">
+        <img class="social-icon" src="img/instagram.svg" alt="Instagram">
+      </a>
+      <a href="https://wa.me/5579991624420" target="_blank" aria-label="Contate-nos no WhatsApp">
+        <img class="social-icon" src="img/whatsapp.svg" alt="WhatsApp">
+      </a>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+  <script src="scripts/animations.js"></script>
+</body>
+</html>
