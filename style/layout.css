@@ -1,4 +1,4 @@
-/* ======= HEADER ======= */
+
 header {
   width: 100%;
   padding: 25px 60px;
@@ -75,7 +75,7 @@ header .nav a:hover {
   transform: translateY(-2px);
 }
 
-/* ======= MENU MOBILE ======= */
+
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -147,7 +147,7 @@ footer p {
   margin: 0;
 }
 
-/* ======= ÍCONE SOCIAL ======= */
+
 .social-icon {
   width: 32px;
   height: 32px;

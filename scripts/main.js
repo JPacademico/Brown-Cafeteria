@@ -1,4 +1,4 @@
-// ======= MENU MOBILE =======
+
 const menuToggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.nav');
 
@@ -8,7 +8,7 @@ if (menuToggle && nav) {
     nav.classList.toggle('active');
   });
 
-  // Fechar menu ao clicar em um link
+ 
   document.querySelectorAll('.nav a').forEach(link => {
     link.addEventListener('click', () => {
       menuToggle.classList.remove('active');
@@ -17,7 +17,7 @@ if (menuToggle && nav) {
   });
 }
 
-// ======= HEADER SCROLL =======
+
 const header = document.querySelector('header');
 let lastScroll = 0;
 
