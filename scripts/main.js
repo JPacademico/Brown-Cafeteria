@@ -73,7 +73,6 @@ function activateMenuOnScroll() {
 
 window.addEventListener('scroll', activateMenuOnScroll);
 
-// ======= BOTÃO HERO (se presente) =======
 const heroButton = document.querySelector('.hero button');
 if (heroButton) {
   heroButton.addEventListener('click', () => {
