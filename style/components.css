@@ -53,8 +53,7 @@
 .hero p {
   font-size: clamp(1rem, 2vw, 1.2rem);
   color: var(--text-light);
-  margin-bottom: 40px;
-  margin-left: 19%;
+  margin: 0 auto 40px auto;
   max-width: 600px;
   animation: fadeInUp 1s ease-out 0.6s backwards;
 }
@@ -420,6 +419,7 @@
   background: var(--gradient-2);
   border-radius: 10px;
 }
+.menu-category { scroll-margin-top: 120px; }
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
