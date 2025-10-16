@@ -1,4 +1,4 @@
-/* ======= VARIÁVEIS CSS ======= */
+
 :root {
   --primary-color: #6b3e28;
   --secondary-color: #8b5a36;
@@ -15,7 +15,7 @@
   --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ======= RESET & BASE ======= */
+
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', bold;
   background: var(--light-bg);
   color: var(--text-dark);
   overflow-x: hidden;
@@ -53,7 +53,7 @@ img {
   display: block;
 }
 
-/* ======= SCROLLBAR PERSONALIZADA ======= */
+
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -71,7 +71,7 @@ img {
   background: var(--accent-color);
 }
 
-/* ======= ANIMAÇÕES BASE ======= */
+
 @keyframes float {
   0%, 100% { transform: translate(0, 0) rotate(0deg); }
   50% { transform: translate(-50px, -50px) rotate(180deg); }

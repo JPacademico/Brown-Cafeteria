@@ -1,4 +1,4 @@
-// ======= ANIMAÇÕES DE SCROLL =======
+
 const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
 
 const observer = new IntersectionObserver((entries) => {
@@ -13,7 +13,7 @@ document.querySelectorAll('.fade-in').forEach(el => {
   observer.observe(el);
 });
 
-// ======= EFEITO PARALLAX NO HERO =======
+
 window.addEventListener('scroll', () => {
   const scrolled = window.pageYOffset;
   const hero = document.querySelector('.hero');
