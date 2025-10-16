@@ -105,7 +105,7 @@ header .nav a:hover {
   transform: rotate(-45deg) translate(7px, -7px);
 }
 
-/* ======= FOOTER ======= */
+
 footer {
   background: var(--gradient-2);
   color: #fffaf5;
