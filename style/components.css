@@ -101,7 +101,7 @@
   transform: translateY(-2px);
 }
 
-/* ======= GALERIA ======= */
+
 .galeria {
   display: flex;
   justify-content: center;
@@ -154,7 +154,7 @@
   box-shadow: var(--shadow-lg);
 }
 
-/* ======= SOBRE ======= */
+
 .sobre {
   padding: 120px 10%;
   background: linear-gradient(180deg, #fefbf7 0%, #fffaf5 100%);
@@ -291,7 +291,7 @@
   overflow: hidden;
   border-radius: 25px;
   cursor: pointer;
-  height: 400px;
+  height: 300px;
   box-shadow: var(--shadow-md);
   transition: var(--transition);
 }
@@ -314,6 +314,13 @@
   object-fit: cover;
   transition: var(--transition);
 }
+
+.img-cards {
+  height: 65%;
+  margin-left: 11.5px;
+ 
+}
+
 .menu-item:hover img {
   transform: scale(1.15);
 }

@@ -28,11 +28,14 @@ html {
 }
 
 body {
-  font-family: 'Poppins', bold;
+  font-family: "Inter", sans-serif;
   background: var(--light-bg);
   color: var(--text-dark);
   overflow-x: hidden;
   line-height: 1.6;
+  font-optical-sizing: auto;
+  font-weight: 800px;
+  font-style: normal;
 }
 
 h1, h2, h3 {
