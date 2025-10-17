@@ -185,6 +185,69 @@
     </div>
   </section>
 
+  <!-- Toast de Notificação -->
+  <div class="toast" id="toast">
+    <div class="toast-content">
+      <div class="toast-icon">
+        <div class="loading-spinner" id="loadingSpinner"></div>
+        <div class="coffee-icon" id="coffeeIcon" style="display: none;">☕</div>
+      </div>
+      <div class="toast-message">
+        <h4 id="toastTitle">Enviando pedido...</h4>
+        <p id="toastMessage">Aguarde enquanto processamos seu pedido.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal de Pedido -->
+  <div class="order-modal" id="orderModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Fazer Pedido</h2>
+        <button class="close-modal" id="closeModal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="product-info">
+          <img id="modalProductImage" src="" alt="">
+          <div class="product-details">
+            <h3 id="modalProductName"></h3>
+            <p id="modalProductDescription"></p>
+            <span class="price" id="modalProductPrice"></span>
+          </div>
+        </div>
+        <form class="order-form" id="orderForm">
+          <div class="form-group">
+            <label for="quantity">Quantidade:</label>
+            <input type="number" id="quantity" name="quantidade" min="1" max="10" value="1" required>
+          </div>
+          <div class="form-group">
+            <label for="tableNumber">Número da Mesa:</label>
+            <input type="number" id="tableNumber" name="mesa" min="1" max="50" required>
+          </div>
+          <div class="form-group">
+            <label>Para viagem ou consumo no local?</label>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="viagem" value="Sim" required>
+                <span class="radio-custom"></span>
+                Para viagem
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="viagem" value="Não" required>
+                <span class="radio-custom"></span>
+                Consumo no local
+              </label>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button type="button" class="btn-cancel" id="cancelOrder">Cancelar</button>
+            <button type="submit" class="btn-confirm">Confirmar Pedido</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
   <footer id="contato">
     <p>© 2025 Brown Cafeteria & Tabacaria — Todos os direitos reservados.</p>
     <div class="social-icons">
@@ -202,5 +265,6 @@
 
   <script src="scripts/main.js"></script>
   <script src="scripts/animations.js"></script>
+  <script src="scripts/menu.js"></script>
 </body>
 </html>

@@ -21,5 +21,3 @@ window.addEventListener('scroll', () => {
     hero.style.transform = `translateY(${scrolled * 0.5}px)`;
   }
 });
-
-
