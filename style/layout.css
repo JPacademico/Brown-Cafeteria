@@ -1,7 +1,7 @@
 
 header {
   width: 100%;
-  padding: 25px 60px;
+  padding: 16px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -17,7 +17,7 @@ header {
 }
 
 header.scrolled {
-  padding: 15px 60px;
+  padding: 10px 60px;
   box-shadow: var(--shadow-md);
 }
 
@@ -109,7 +109,7 @@ header .nav a:hover {
 footer {
   background: var(--gradient-2);
   color: #fffaf5;
-  padding: 60px 10%;
+  padding: 45px 10%;
   text-align: center;
   position: relative;
   overflow: hidden;
