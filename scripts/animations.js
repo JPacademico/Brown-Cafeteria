@@ -13,11 +13,3 @@ document.querySelectorAll('.fade-in').forEach(el => {
   observer.observe(el);
 });
 
-
-window.addEventListener('scroll', () => {
-  const scrolled = window.pageYOffset;
-  const hero = document.querySelector('.hero');
-  if (hero) {
-    hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-  }
-});

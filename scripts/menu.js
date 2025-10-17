@@ -54,9 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && modal.classList.contains('active')) {
-      closeOrderModal();
-    }
+    if (e.key === 'Escape' && modal.classList.contains('active')) closeOrderModal();
   });
 
   orderForm.addEventListener('submit', function(e) {
@@ -87,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
         body: formData
       });
 
-      if (response.status === 200 || response.status === 0) {
+      if (response.ok || response.status === 0) {
         const orderData = {
           product: {
             name: formData.get('produto'),
@@ -120,24 +118,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     toast.classList.add('show');
     
-    if (type !== 'loading') {
-      setTimeout(() => {
-        toast.classList.remove('show');
-      }, 5000);
-    }
+    if (type !== 'loading') setTimeout(() => toast.classList.remove('show'), 5000);
   }
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-  const menuCards = document.querySelectorAll('.menu-item-card');
-  
-  menuCards.forEach(card => {
-    card.addEventListener('mouseenter', function() {
-      this.style.transform = 'translateY(-8px) scale(1.02)';
-    });
-    
-    card.addEventListener('mouseleave', function() {
-      this.style.transform = 'translateY(0) scale(1)';
-    });
-  });
-});
+ 
