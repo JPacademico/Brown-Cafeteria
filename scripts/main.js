@@ -50,7 +50,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 });
 
 // ======= ATIVAR LINK ATIVO NO MENU =======
-const sections = document.querySelectorAll('section[id]');
+const sections = document.querySelectorAll('section[id], footer[id]');
 
 function activateMenuOnScroll() {
   const scrollY = window.pageYOffset;
