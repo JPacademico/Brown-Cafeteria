@@ -19,37 +19,6 @@ if (menuToggle && nav) {
 
 
 const header = document.querySelector('header');
-let lastScroll = 0;
-
-window.addEventListener('scroll', () => {
-  const currentScroll = window.pageYOffset;
-  if (!header) return;
-
-  if (currentScroll > 100) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-
-  lastScroll = currentScroll;
-});
-
-// ======= ROLAGEM SUAVE =======
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-  link.addEventListener('click', function(e) {
-    const href = this.getAttribute('href');
-    if (!href) return;
-    const target = document.querySelector(href);
-    if (!target) return;
-    e.preventDefault();
-
-    const headerHeight = header ? header.offsetHeight : 0;
-    const targetPosition = target.offsetTop - headerHeight;
-    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-  });
-});
-
-// ======= ATIVAR LINK ATIVO NO MENU =======
 const sections = document.querySelectorAll('section[id], footer[id]');
 
 function activateMenuOnScroll() {
@@ -71,7 +40,39 @@ function activateMenuOnScroll() {
   });
 }
 
-window.addEventListener('scroll', activateMenuOnScroll);
+function handleScroll() {
+  const currentScroll = window.pageYOffset;
+  if (header) {
+    if (currentScroll > 100) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+  }
+
+  activateMenuOnScroll();
+
+  const hero = document.querySelector('.hero');
+  if (hero) {
+    hero.style.transform = `translateY(${currentScroll * 0.5}px)`;
+  }
+}
+
+window.addEventListener('scroll', handleScroll);
+
+// ======= ROLAGEM SUAVE =======
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    if (!href) return;
+    const target = document.querySelector(href);
+    if (!target) return;
+    e.preventDefault();
+
+    const headerHeight = header ? header.offsetHeight : 0;
+    const targetPosition = target.offsetTop - headerHeight;
+    window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+  });
+});
+
+// ======= ATIVAR LINK ATIVO NO MENU =======
 
 const heroButton = document.querySelector('.hero button');
 if (heroButton) {
